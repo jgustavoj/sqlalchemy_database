@@ -28,7 +28,20 @@ class Comment(Base):
 class Post(Base):
     __tablename__ = 'Post'
     id = Column(Integer, primary_key=True)
-    user_id = (Integer, ForeignKey('User.id'))
+    user_id = Column(Integer, ForeignKey('User.id'))
+
+# class Media(Base):
+#     __tablename__= 'Media'
+#     id = Column(Integer, primary_key=(True))
+#     media_type = Column(enumerate(250), nullable=False )
+#     url = Column(String(250), nullale = True )
+#     post_id = (Integer, ForeignKey('Post.id'))
+
+# class Follower(Base):
+#     __tablename__='Follower'
+#     user_from_id = Column(Integer, nullable=False )
+#     user_to_id = Column(Integer, nullable=False )
+
 
     def to_dict(self):
         return {}
