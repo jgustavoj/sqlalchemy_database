@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 #!/workspace/exercise-instagram-data-modeling/.venv/bin/python3.6
+=======
+#!/workspace/exercise-instagram-data-modeling/.venv/bin/python3.7m
+>>>>>>> ee6a873896d9b022b2790955ba7cf6dc2b8456f3
 # -*- coding: utf-8 -*-
 import re
 import sys
